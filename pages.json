@@ -1,0 +1,222 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle":"custom"
+			}
+		},	
+		// 借书页面
+		//首页
+		{
+		    "path" : "pages/borrowBook/index/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "借阅",
+		        "navigationStyle":"custom"
+		    }
+		    
+		},//图书信息
+		{
+		    "path" : "pages/borrowBook/components/ordersDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "图书信息",
+		        "navigationStyle":"custom"
+		    }
+		    
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle":"custom"
+			}
+		},		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle":"custom"
+			}
+		},
+	
+		{
+			"path": "pages/repository/videoIndex",
+			"style": {
+				"navigationBarTitleText": "视频课程",
+				"navigationStyle":"custom",
+				"disableScroll":true
+			}
+		},			
+			
+		{
+			"path": "pages/repository/index",
+			"style": {
+				"navigationBarTitleText": "知识文库",
+				"navigationStyle":"custom",
+				"disableScroll":true
+			}
+		},			
+				
+		{
+			"path": "pages/repository/repositoryList",
+			"style": {
+				"navigationBarTitleText": "知识文库详情"
+				// "navigationStyle":"custom"
+			}
+		},	
+
+
+		{
+			"path": "pages/repository/videoDetail",
+			"style": {
+				"navigationBarTitleText": "视频详情"
+				// "navigationStyle":"custom"
+			}
+		},
+		
+		{
+			"path": "pages/webview/index",
+			"style": {
+				"navigationBarTitleText": "知识文库详情",
+				"navigationStyle":"custom"
+			}
+		},
+		// 考试中心
+		{
+			"path": "pages/examination/index",
+			"style": {
+				"navigationBarTitleText": "考试中心",
+				"navigationStyle":"custom"
+			}
+		},
+		// 题目列表
+		{
+			"path": "pages/examination/question",
+			"style": {
+				"navigationBarTitleText": "题目列表",
+				"navigationStyle":"custom"
+			}
+		},
+		// 单元训练
+		{
+			"path": "pages/unitTraining/index",
+			"style": {
+				"navigationBarTitleText": "单元训练",
+				"navigationStyle":"custom",
+				"disableScroll":true
+			}
+		},
+		// 单元训练-题库
+		{
+			"path": "pages/unitTraining/question",
+			"style": {
+				"navigationBarTitleText": "单元训练-题库",
+				"navigationStyle":"custom"
+			}
+		},
+		// 错题版
+		{
+			"path": "pages/unitTraining/wrongQuestion",
+			"style": {
+				"navigationBarTitleText": "错题版",
+				"navigationStyle":"custom"
+			}
+		},
+		// 错题板详情 
+		{
+			"path": "pages/unitTraining/children/questionDetails",
+			"style": {
+				"navigationBarTitleText": "错题板详情",
+				"navigationStyle":"custom"
+			}
+		},
+		// 解析 
+		{
+			"path": "pages/unitTraining/children/analysis",
+			"style": {
+				"navigationBarTitleText": "解析",
+				"navigationStyle":"custom"
+			}
+		},
+		// 我的
+		{
+			"path": "pages/main/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle":"custom"
+			}
+		},
+		// 知识文库收藏
+		{
+			"path": "pages/main/knowledgeCollection",
+			"style": {
+				"navigationBarTitleText": "知识文库收藏",
+				"navigationStyle":"custom"
+			}
+		},
+		// 视频课程收藏
+		{
+			"path": "pages/main/videoCollection",
+			"style": {
+				"navigationBarTitleText": "视频课程收藏",
+				"navigationStyle":"custom"
+			}
+		},
+		// 设置 
+		{
+			"path": "pages/main/setUp",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationStyle":"custom"
+			}
+		},
+		// 设置详情
+		{
+			"path": "pages/main/components/setupInfo",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		//搜索
+	    {
+            "path" : "pages/repository/components/searchPage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
+               "navigationStyle":"custom",
+			    "enablePullDownRefresh": true
+            }
+            
+        },
+		//关联知识
+		{
+		    "path" : "pages/examination/relatedKnowledge",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "关联知识",
+		        "navigationStyle":"custom",
+			    "enablePullDownRefresh": true
+		    }
+		    
+		}
+		
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"onReachBottomDistance": 200
+	}
+	
+}
